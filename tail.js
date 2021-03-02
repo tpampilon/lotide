@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function(arr){
-  let first = arr[0];
-  return first;
+const tail = function(arr) {
+  let last = arr.slice(1);
+  return last;
 };
