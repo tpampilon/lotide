@@ -28,15 +28,5 @@ const middle = function(array) {
   } else if (array.length % 2 === 0) {
     arrMid.push(array[secNum], array[midNum]);
   }
-
   return arrMid;
 };
-
-console.log(middle([1])); // => []
-console.log(middle([1, 2])); // => []
-console.log('');
-console.log(middle([1, 2, 3])); // => [2]
-console.log(middle([1, 2, 3, 4, 5])); 0; // => [3]
-console.log('');
-console.log(middle([1, 2, 3, 4])); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
