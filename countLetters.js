@@ -8,3 +8,22 @@ const assertEqual = function(actual, expected) {
     return console.log(`🛑 Assertion Failed: ${actual} !== ${expected} 🛑`);
   }
 };
+
+const countLetters = function(countString) {
+  const number = {};
+  const noSpace = countString.split(' ').join('');
+  
+  for(const string of noSpace) {
+    if (number[string]){
+      number[string] += 1;
+    }
+    else {
+      number[string] = 1;
+    }
+  }
+  
+  return number;
+};
+
+
+
