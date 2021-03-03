@@ -24,11 +24,8 @@ const flatten = function(arr) {
       flat.push(arr[i]);
     }
     for (let j = 0; j < arr[i].length; j++) {
-
       flat.push(arr[i][j]);
     }
   }
   return flat;
 };
-
-console.log(flatten([[1, 2, 3, 4], 5, [6]]));
