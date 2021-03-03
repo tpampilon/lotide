@@ -18,15 +18,25 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const middle = function(array) {
   const midNum = Math.floor(array.length / 2),
-        secMid = midNum - 1,
-        arrMid = [];
+    secNum = midNum - 1,
+    arrMid = [];
 
-  if(array.length === 1 || array.length === 2) {
+  if (array.length === 1 || array.length === 2) {
     return arrMid;
   } else if (array.length % 2 !== 0) {
-      arrMid.push(array[midNum]);
+    arrMid.push(array[midNum]);
   } else if (array.length % 2 === 0) {
-      arrMid.push(array[secMid], array[midNum]);
+    arrMid.push(array[secNum], array[midNum]);
   }
+
   return arrMid;
 };
+
+console.log(middle([1])); // => []
+console.log(middle([1, 2])); // => []
+console.log('');
+console.log(middle([1, 2, 3])); // => [2]
+console.log(middle([1, 2, 3, 4, 5])); 0; // => [3]
+console.log('');
+console.log(middle([1, 2, 3, 4])); // => [2, 3]
+console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
