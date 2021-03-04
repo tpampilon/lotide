@@ -13,13 +13,8 @@ const countLetters = function(countString) {
   const number = {};
   const noSpace = countString.split(' ').join('');
   
-  for(const string of noSpace) {
-    if (number[string]){
-      number[string] += 1;
-    }
-    else {
-      number[string] = 1;
-    }
+  for (let i = 0; i < noSpace.length; i++) {
+    number[noSpace][i] = 0;
   }
   
   return number;
