@@ -26,7 +26,6 @@ const takeUntil = (array, callback) => {
       newArr.push(arr);
       }
     }
-
   return newArr;
 }
 
