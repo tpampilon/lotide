@@ -19,7 +19,3 @@ describe('#assertArraysEqual', () => {
     assert.strictEqual(assertArraysEqual(firstInput, secInput), expected);
   });
 });
-
-
-// assertArraysEqual([1, 2, 3], [1, 2, 3]);
-// assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
