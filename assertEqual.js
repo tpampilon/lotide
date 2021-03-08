@@ -3,9 +3,9 @@ const assertEqual = (actual, expected) => {
   // let exp = expected.toString();
 
   if (actual == expected) {
-    return console.log(`✅ Assertion Passed: ${actual} === ${expected} ✅`);
+    return `✅ Assertion Passed: ${actual} === ${expected} ✅`;
   } else {
-    return console.log(`🛑 Assertion Failed: ${actual} !== ${expected} 🛑`);
+    return `🛑 Assertion Failed: ${actual} !== ${expected} 🛑`;
   }
 };
 
