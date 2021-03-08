@@ -10,7 +10,6 @@ describe('#middle', () => {
     assert.deepEqual(middle(input), expected);
   });
 
-
   it('returns [] for [1, 2]', () => {
     const input = [1, 2];
     const expected = [];
