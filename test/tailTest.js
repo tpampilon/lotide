@@ -1,6 +1,13 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
+describe("#tail", () => {
+
+  it("returns ['Lighthouse', 'Labs'] when ['Yo Yo', 'Lighthouse', 'Labs'] is passed", () => {
+    const input = ["Yo Yo", "Lighthouse", "Labs"];
+    const expected = ["Lighthouse", "Labs"];
+
+    assert.deepEqual(tail(input), expected);
+  });
+
+});
