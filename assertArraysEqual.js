@@ -1,12 +1,4 @@
-const eqArrays = function(arr1, arr2) {
-  let result = true;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      result = false;
-    }
-  }
-  return result;
-};
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2) === true) {
@@ -15,3 +7,5 @@ const assertArraysEqual = function(arr1, arr2) {
     return console.log(`🛑 Assertion Failed: ${arr1} !== ${arr2} 🛑`);
   }
 };
+
+module.exports = assertArraysEqual;
